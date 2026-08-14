@@ -105,4 +105,97 @@ Commit: `git commit -m "blok 5: atmosfera a suva"`.
 
 ## Backlog (doplňuje se po každé session)
 
-*(zatím prázdné — vyplní se nápady dětí na konci první session)*
+Startovní seznam nápadů nad rámec Session 1 — rozšíří se/přetřídí podle toho, co děti
+skutečně na konci session řeknou:
+
+- **Bossové** — velký sprite, HP bar, telegraphed útoky, druhá (enraged) fáze při 50 % HP.
+- **Zbraně** — 2-3 odlišné styly útoku (rychlá/slabá vs pomalá/silná, případně jeden
+  dálkový), přepínání tlačítkem.
+- **Hudba a zvuky** — sfx na nové akce, napjatější smyčka pro boss arénu.
+- **Efekty/juice** — trail za dashem, lepší death efekt, combo counter.
+- **Level design** — víc místností, secret area, boss aréna s uzavíracími dveřmi.
+
+Viz [Session 2](#session-2-2h--bossové-zbraně-a-hudba) níže — první konkrétní krok
+k realizaci téhle části backlogu.
+
+---
+
+## Session 2 (~2h) — bossové, zbraně a hudba
+
+Navazuje na Session 1 (pohyb, dash, základní boj, hazardy, atmosféra už hotové).
+Stejný formát: ty vajbíš, děti hrají a testují na handheldech po každém bloku.
+
+### 0. Recap a hlasování (10 min)
+
+- Krátce ukaž/zahraj, kde hra skončila po Session 1.
+- Zeptej se: **"Co vás minule nejvíc bavilo a co byste chtěli teď?"** — porovnej s
+  backlogem výše, ať vidí, že jejich nápady reálně řídí, co se dnes staví.
+- Rozdej handheldy, ověř že poslední build ještě funguje.
+
+### Blok 1 — Zbraně (25 min)
+
+**Cíl:** hráč má na výběr aspoň 2 odlišně "cítěné" zbraně.
+
+Vajbící prompt: *"Přidej druhou zbraň, přepínatelnou tlačítkem ⬆️ — např. rychlou dýku
+(malý dosah, rychlé útoky, slabé) vs pomalý těžký meč (velký hitbox, pomalejší, silný
+knockback). Zobraz aktuální zbraň v UI."*
+
+→ push, test.
+- "Která zbraň je zábavnější? Proč?"
+- "Chybí vám nějaký třetí styl (třeba na dálku)?"
+
+Commit: `git commit -m "session2 blok 1: zbrane"`.
+
+### Blok 2 — Boss aréna (15 min)
+
+**Cíl:** speciální místnost, která hráče "uzamkne" s bossem.
+
+Vajbící prompt: *"Vytvoř bossí arénu — při vstupu hráče se za ním zavřou dveře (zeď),
+dokud boss nemá 0 HP, pak se otevřou."*
+
+→ push, test (jen průchod aréně, boss ještě nic nedělá).
+
+Commit: `git commit -m "session2 blok 2: boss arena"`.
+
+### Blok 3 — Boss, fáze 1 (20 min)
+
+**Cíl:** první opravdový boss fight — čitelný, ne nefér.
+
+Vajbící prompt: *"Přidej bosse — velký sprite, vlastní HP bar nahoře na obrazovce, jeden
+telegraphed útok (krátké 'nabíjení' před ranou, ať se dá uhnout), mezi útoky chvíli
+odpočívá."*
+
+→ push, test.
+- "Jde útok včas rozpoznat a uhnout, nebo je to nečekané?"
+
+Commit: `git commit -m "session2 blok 3: boss faze 1"`.
+
+### Blok 4 — Boss, fáze 2 / enraged (15 min)
+
+**Cíl:** boss se při 50 % HP viditelně změní — vyšší tempo, hra dostane gradaci.
+
+Vajbící prompt: *"Když bossovi klesne HP pod polovinu, ať zrychlí a přidej mu druhý,
+agresivnější útok (např. rychlý dash na hráče). Změň barvu/efekt, ať je vidět, že je
+'enraged'."*
+
+→ push, test.
+
+Commit: `git commit -m "session2 blok 4: boss faze 2"`.
+
+### Blok 5 — Hudba a zvuky (20 min)
+
+**Cíl:** boss fight zní jako vyvrcholení, ne jako zbytek hry.
+
+Vajbící prompt: *"Přidej zvuky na přepnutí zbraně a na boss útoky/zásahy. Vytvoř
+napjatější hudební smyčku pro boss arénu, odlišnou od zvuku běžných místností."*
+
+→ push, **finální test** — boss fight se vším dohromady.
+
+Commit: `git commit -m "session2 blok 5: hudba a zvuky"`.
+
+### Závěr (10-15 min)
+
+- Společný finální boss fight, kdo ho porazí první.
+- Aktualizuj Backlog o nové nápady na Session 3 (nová zbraň na dálku? druhý boss? nový
+  level?).
+- Commit, `git push`, ukaž aktualizované repo.
