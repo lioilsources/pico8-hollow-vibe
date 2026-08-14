@@ -1,0 +1,9 @@
+# PICO-8
+*.p8.bak
+*.p8.png.bak
+
+# macOS
+.DS_Store
+
+# local handheld sync targets (may contain private IPs/paths)
+scripts/targets.conf
