@@ -48,8 +48,8 @@ Všechny handheldy i notebook musí být na stejné síti.
    necommitne se — obsahuje soukromé IP adresy).
 2. Vyplň řádek na handheld, např.:
    ```
-   knight-1  pi@192.168.1.101:/roms/ports/pico8/carts/ninja.p8
-   knight-2  pi@192.168.1.102:/roms/ports/pico8/carts/ninja.p8
+   knight-1  pi@<handheld-1-ip>:/roms/ports/pico8/carts/ninja.p8
+   knight-2  pi@<handheld-2-ip>:/roms/ports/pico8/carts/ninja.p8
    ```
    (uživatelské jméno a cílová cesta se liší dle firmwaru — over si to jednou ručně přes
    `scp` předem a pak už jen kopíruj do configu).
